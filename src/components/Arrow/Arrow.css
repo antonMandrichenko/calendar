@@ -1,0 +1,10 @@
+.Arrow {
+  color: darkviolet;
+  font-size: 3rem;
+  position: relative; }
+  .Arrow:hover {
+    color: fuchsia;
+    font-size: 2.8rem;
+    cursor: pointer; }
+
+/*# sourceMappingURL=Arrow.css.map */

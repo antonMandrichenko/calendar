@@ -1,0 +1,24 @@
+.DayView {
+  width: 12.5%;
+  margin: 2px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; }
+  .DayView:hover {
+    cursor: pointer;
+    background-color: darkviolet;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem; }
+
+@media (max-width: 992px) {
+  .DayView {
+    width: 11.11111%; } }
+.alert .alert-warning {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: darkslateblue; }
+
+/*# sourceMappingURL=DaysView.css.map */
