@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,aAAc;EACZ,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;EACnB,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,GAAG",
+"sources": ["ButtonDelete.scss"],
+"names": [],
+"file": "ButtonDelete.css"
+}
