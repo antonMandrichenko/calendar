@@ -9,9 +9,8 @@ const DayView = (props) => {
          data-date={props.date}>
       {props.tasks.filter((task) =>
         task.time === props.date
-      ).map((item,i) => {
-          if (i === 0) return <TaskInDate key={i}/>
-        }
+      ).map((item,i) =>
+          i === 0 && <TaskInDate key={i}/>
       )}
       {props.day}
     </div>
