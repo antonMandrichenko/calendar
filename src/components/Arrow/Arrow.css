@@ -1,10 +1,10 @@
 .Arrow {
-  color: darkviolet;
-  font-size: 3rem;
-  position: relative; }
+  color: white;
+  font-size: 2.5rem;
+  position: relative;
+  padding: 10px; }
   .Arrow:hover {
-    color: fuchsia;
-    font-size: 2.8rem;
+    color: #043e7c;
     cursor: pointer; }
 
 /*# sourceMappingURL=Arrow.css.map */

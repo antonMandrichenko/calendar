@@ -1,0 +1,12 @@
+.ButtonTaskCompleted {
+  width: 33%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .ButtonTaskCompleted:hover {
+    color: grey;
+    transform: scale(1.5, 1.5);
+    transition: color 0.7s ease, scale 0.7s ease; }
+
+/*# sourceMappingURL=ButtonTaskCompleted.css.map */

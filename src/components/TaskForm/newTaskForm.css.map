@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,SAAU;EACR,UAAU,EAAE,IAAI;EAChB,OAAO,EAAE,IAAI;EACb,QAAQ,EAAE,QAAQ;EAElB,eAAQ;IACN,KAAK,EAAE,KAAK;;AAIhB,aAAc;EACZ,aAAa,EAAE,CAAC;;AAGlB,YAAa;EACX,KAAK,EAAE,KAAK",
+"sources": ["newTaskForm.scss"],
+"names": [],
+"file": "newTaskForm.css"
+}

@@ -1,14 +1,5 @@
 .TasksContainer {
-  text-align: center;
-
-  &__task {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-  }
-
-  .row {
-    text-align: left;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-  }
+  width: 100%;
+  height: 440px;
+  border-top: 1px solid white;
 }

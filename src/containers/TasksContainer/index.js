@@ -1,45 +1,55 @@
 import React from 'react';
-import TaskForm from '../../components/newTaskForm';
+import * as moment from 'moment';
+import TaskForm from '../../components/TaskForm';
 import TaskView from '../../components/TaskView';
 import ButtonAdd from "../../components/ButtonAdd";
 import './TasksContainer.css';
 
-const TasksContainer = ({ date,
-                          toAddTask,
+const TasksContainer = ({ isAddTask,
+                          selectedDate,
+                          addTask,
                           tasks,
-                          wantToAddTask,
                           deleteTask,
                           showFormForAddTask,
-                          closeFormForAddTask
+                          closeFormForAddTask,
+                          changeTask,
+                          changedTask,
+                          changeCompleted
 }) => {
+
+  const dayTasks = tasks.filter((task) =>
+    Object.keys(task)[0] === moment(selectedDate).format('D.MM.YYYY')
+  )[0];
+
+  let key;
+
+  if(dayTasks) {
+    key = Object.keys(dayTasks)[0];
+  }
+
   return (
-    <div className="TasksContainer alert alert-secondary col-md-6">
-      <h3 className="text-center">{date}</h3>
-      {wantToAddTask
-        ? <TaskForm toAddTask={toAddTask} closeFormForAddTask={closeFormForAddTask}/>
-        : tasks.filter((task) =>
-          task.time === date).length !== 0
-            ? tasks.filter((task) =>
-              task.time === date
-              ).map((task) =>
-                task.data.map((item, i) =>
-                  <TaskView key={i}
-                            item={item}
-                            deleteTask={deleteTask}
-                            date={date}
-                  />
-                )
-              )
-              : null
-      }
-      {wantToAddTask
-        ? null
-        : <div className="row alert alert-success">
-            <div className="col-11">Add task for this day</div>
-            <div className="col-1">
+    <div className="TasksContainer">
+      {isAddTask
+        ? <TaskForm selectedDate={selectedDate}
+                    addTask={addTask}
+                    closeFormForAddTask={closeFormForAddTask}
+                    changedTask={changedTask}
+                    changeTask={changeTask}
+        />
+        : dayTasks
+          ? <>
+              {dayTasks[key].map((description, i) =>
+                <TaskView key={i}
+                          description={description}
+                          deleteTask={deleteTask}
+                          selectedDate={selectedDate}
+                          changeTask={changeTask}
+                          changeCompleted={changeCompleted}
+                />
+              )}
               <ButtonAdd showFormForAddTask={showFormForAddTask}/>
-            </div>
-          </div>
+            </>
+          : <ButtonAdd showFormForAddTask={showFormForAddTask}/>
       }
     </div>
   );

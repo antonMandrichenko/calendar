@@ -3,7 +3,7 @@ import CalendarAndTasks from '../CalendarTasks';
 
 const App =() => {
     return (
-      <div className="container App">
+      <div className="App">
         <CalendarAndTasks/>
       </div>
     );

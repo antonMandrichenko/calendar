@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA,eAAgB;EACd,UAAU,EAAE,MAAM;EAElB,qBAAQ;IACN,OAAO,EAAE,IAAI;IACb,eAAe,EAAE,IAAI;IACrB,WAAW,EAAE,MAAM;EAGrB,oBAAK;IACH,UAAU,EAAE,IAAI;IAChB,UAAU,EAAE,gEAA0D",
+"mappings": "AAAA,eAAgB;EACd,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,KAAK;EACb,UAAU,EAAE,eAAe",
 "sources": ["TasksContainer.scss"],
 "names": [],
 "file": "TasksContainer.css"

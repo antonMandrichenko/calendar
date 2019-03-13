@@ -1,11 +1,11 @@
 .Arrow {
-  color: darkviolet;
-  font-size: 3rem;
+  color: white;
+  font-size: 2.5rem;
   position: relative;
+  padding: 10px;
 
   &:hover {
-    color: fuchsia;
-    font-size: 2.8rem;
+    color: #043e7c;
     cursor: pointer;
   }
 }

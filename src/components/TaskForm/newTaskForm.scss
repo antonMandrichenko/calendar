@@ -1,0 +1,17 @@
+.TaskForm {
+  text-align: left;
+  padding: 20px;
+  position: relative;
+
+  & label {
+    color: white;
+  }
+}
+
+.form-control {
+  border-radius: 0;
+}
+
+.text-center {
+  color: white;
+}

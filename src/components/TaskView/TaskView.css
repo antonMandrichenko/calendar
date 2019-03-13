@@ -1,0 +1,52 @@
+.TaskView {
+  height: 14.28571%;
+  width: 100%;
+  border-bottom: 1px solid white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  color: white; }
+  .TaskView__task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .TaskView__icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%; }
+  .TaskView__time {
+    margin-right: 2rem; }
+  .TaskView__title {
+    font-size: 1.5rem; }
+    .TaskView__title_completed {
+      font-size: 1.5rem;
+      text-decoration: line-through;
+      color: gray; }
+  .TaskView__text {
+    color: grey; }
+  .TaskView__change {
+    width: 33%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .TaskView__change:hover {
+      color: grey;
+      transform: scale(1.5, 1.5);
+      transition: color 0.7s ease, scale 0.7s ease; }
+  .TaskView__delete {
+    width: 33%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .TaskView__delete:hover {
+      color: grey;
+      transform: scale(1.5, 1.5);
+      transition: color 0.7s ease, scale 0.7s ease; }
+
+/*# sourceMappingURL=TaskView.css.map */

@@ -1,0 +1,11 @@
+.WeekView {
+  width: 14.28571%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: #34A2BC;
+  font-size: 1.3rem; }
+
+/*# sourceMappingURL=WeekView.css.map */

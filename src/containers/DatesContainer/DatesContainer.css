@@ -1,24 +1,6 @@
 .DatesContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between; }
-  .DatesContainer__title {
-    font-size: 2rem;
-    font-weight: bold;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
-    .DatesContainer__title_text {
-      margin: 0 1rem; }
-      .DatesContainer__title_text:hover {
-        cursor: pointer;
-        color: fuchsia; }
-
-.DaysContainer {
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; }
+  height: 440px;
+  width: 100%;
+  padding: 10px; }
 
 /*# sourceMappingURL=DatesContainer.css.map */

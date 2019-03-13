@@ -1,0 +1,71 @@
+.TaskView {
+  height: (100%/7);
+  width: 100%;
+  border-bottom: 1px solid white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  color: white;
+
+  &__task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+  }
+
+  &__time {
+    margin-right: 2rem;
+  }
+
+  &__title {
+    font-size: 1.5rem;
+
+    &_completed {
+      font-size: 1.5rem;
+      text-decoration: line-through;
+      color: gray;
+    }
+  }
+
+  &__text {
+    color: grey;
+  }
+
+  &__change {
+    width: 33%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      color: grey;
+      transform: scale(1.5,1.5);
+      transition: color 0.7s ease, scale 0.7s ease;
+    }
+  }
+
+  &__delete {
+    width: 33%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      color: grey;
+      transform: scale(1.5,1.5);
+      transition: color 0.7s ease, scale 0.7s ease;
+    }
+  }
+}

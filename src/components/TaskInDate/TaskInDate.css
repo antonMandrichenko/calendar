@@ -1,7 +1,10 @@
 .TaskInDate {
   position: absolute;
-  top: 2px;
-  left: 2px;
-  font-size: 1rem; }
+  bottom: 25%;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: white; }
 
 /*# sourceMappingURL=TaskInDate.css.map */

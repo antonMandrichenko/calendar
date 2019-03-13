@@ -1,21 +1,31 @@
 import React from 'react';
-import ButtonDelete from "../ButtonDelete";
+import * as moment from 'moment';
+import ButtonTaskCompleted from "../ButtonTaskCompleted";
+import './TaskView.css';
 
-const TaskView = ({item, deleteTask, date}) => {
+const TaskView = ({ description,
+                    deleteTask,
+                    selectedDate,
+                    changeTask,
+                    changeCompleted
+}) => {
+
+  const date = moment(selectedDate).format('D.MM.YYYY');
 
   return (
-    <div className="row alert alert-primary">
-      <div className="col-lg-2">
-        {item.beginTime}
+    <div className={"TaskView"}>
+      <div className={"TaskView__task"}>
+        <div className={"TaskView__time"}>{description.time}</div>
+        <div className={!description.completed ? "TaskView__title" : "TaskView__title_completed"}>{description.descr}</div>
       </div>
-      <div className="col-lg-9">
-        {item.description}
-      </div>
-      <div className="col-lg-1">
-        <ButtonDelete deleteTask={deleteTask}
-                id={item.id}
-                date={date}
+      <div className={"TaskView__icons"}>
+        <div className={"TaskView__change"} onClick={(e)=>{changeTask(e, description.id, description.descr,  description.time)}}><i className="fas fa-pen"></i></div>
+        <ButtonTaskCompleted completed={description.completed}
+                             id={description.id}
+                             date={date}
+                             changeCompleted={changeCompleted}
         />
+        <div className={"TaskView__delete"} onClick={()=>{deleteTask(description.id, date)}}><i className="fas fa-trash-alt"></i></div>
       </div>
     </div>
   );

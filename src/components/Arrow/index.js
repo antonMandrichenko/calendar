@@ -4,7 +4,7 @@ import './Arrow.css';
 const Arrow = ({direction, toSelectedDate}) => {
   return (
     <div className="Arrow" onClick={toSelectedDate}>
-      <i className={direction}></i>
+      <i className={direction} aria-hidden="true"></i>
     </div>
   );
 };

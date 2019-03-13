@@ -2,7 +2,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 2em;
-  height: 2em; }
+  width: 100%;
+  height: 14.28571%;
+  border-bottom: 1px solid white;
+  color: white;
+  font-size: 1.5rem; }
+  .ButtonAdd__icon {
+    margin-left: 2rem; }
+  .ButtonAdd:hover {
+    color: grey;
+    transition: color 0.7s ease 0s; }
 
 /*# sourceMappingURL=ButtonAdd.css.map */

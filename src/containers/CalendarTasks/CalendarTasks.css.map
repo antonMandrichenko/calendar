@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,iBAAkB;EAChB,gBAAgB,EAAE,sIAAsI;EACxJ,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,MAAM",
+"sources": ["CalendarTasks.scss"],
+"names": [],
+"file": "CalendarTasks.css"
+}

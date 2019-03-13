@@ -3,7 +3,7 @@ import './TaskInDate.css';
 
 const TaskInDate = () => {
   return (
-    <i className="TaskInDate far fa-calendar-plus"></i>
+    <div className="TaskInDate"></div>
   );
 };
 
